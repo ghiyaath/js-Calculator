@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 500px;
+  margin: 4% auto;
+  font-family: "Garuda", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  background-color: salmon;
+  
+}
+
+.calculator {
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  width: 600px;
+  padding: 30px 30px 25px 25px;
+  background-image: url(./images/martin-zdrazil-6fxUHRk1Wyw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+.input {
+  border: 1px solid  rgb(19, 2, 255);
+  border-radius: 1px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  font-weight: bold;
+}
+
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+  margin-bottom: -389px;
+  font-weight: bold;
+}
+
+.operators div {
+  display: inline-block;
+  border: 1px solid rgb(19, 2, 255);
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 11px 4px 10px 0;
+  cursor: pointer;
+  background-color: rgb(168, 168, 168);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.operators div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border: 1px solid rgb(19, 2, 255);
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: rgb(168, 168, 168);
+  transition: border-color 0.2s ease-in-out, background-color 0.3s,
+    box-shadow 0.3s;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#clear {
+  background-color: rgb(5, 255, 222);
+  font-weight: bold;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.equal {
+  display: inline-block;
+  border: 1px solid #3efc04;
+  border-radius: 1px;
+  width: 17%;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color:  rgb(19, 2, 255);
+  background-color: #33ff00;
+  transition: all 0.2s ease-in-out;
+  margin-left: 490px;
+  margin-top: -300px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+div.equal:active {
+  font-weight: bold;
+}
